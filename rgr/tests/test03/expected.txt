@@ -1,0 +1,22 @@
+1 1 401 PROGRAM
+1 9 1001 PR
+1 11 59 ;
+2 1 402 BEGIN
+3 1 403 END
+3 4 46 .
+
+<signal-program>
+..<program>
+....401 PROGRAM
+....<procedure-identifier>
+......<identifier>
+........1001 PR
+....59 ;
+....<block>
+......<variable-declaration>
+........<empty>
+......402 BEGIN
+......<statements-list>
+........<empty>
+......403 END
+....46 .

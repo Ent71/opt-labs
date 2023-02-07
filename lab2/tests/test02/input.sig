@@ -1,0 +1,10 @@
+PROGRAM PR;
+	VAR V1:INTEGER;
+            V2:FLOAT;
+	    V3:INTEGER;
+BEGIN 
+	IF V1 = V3 THEN
+		IF 1 = V3 THEN
+		ENDIF;
+	ENDIF;
+END.

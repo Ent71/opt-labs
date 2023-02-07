@@ -1,0 +1,36 @@
+.386
+.MODEL MEDIUM
+.DATA
+	V1	DD	?
+	V2	DD	?
+.CODE
+PR PROC
+MOV AX, 21
+CMP AX, 12
+JNE $L0
+NOP
+$L0: NOP
+MOV AX, V1
+CMP AX, V2
+JNE $L0
+NOP
+$L0: NOP
+MOV AX, 21
+CMP AX, V1
+JNE $L0
+NOP
+$L0: NOP
+MOV AX, V1
+CMP AX, 56
+JNE $L0
+NOP
+$L0: NOP
+NOP
+ret
+PR ENDP
+Code Generator : Error(line 6, column 6): In left part expression must be variable but found: 21
+Code Generator : Error(line 8, column 11): In right part expression must be unsigned integer but found: V2
+Code Generator : Error(line 10, column 6): In left part expression must be variable but found: 21
+Code Generator : Error(line 10, column 11): In right part expression must be unsigned integer but found: V1
+
+

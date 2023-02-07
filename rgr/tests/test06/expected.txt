@@ -1,0 +1,62 @@
+1 1 401 PROGRAM
+1 9 1001 PR
+1 11 59 ;
+2 2 404 VAR
+2 6 1002 V1
+2 8 58 :
+2 9 405 INTEGER
+2 16 59 ;
+3 1 402 BEGIN
+4 2 408 IF
+4 5 501 100
+4 9 61 =
+4 11 1003 V2
+4 14 409 THEN
+5 2 1004 ELS
+6 2 407 ENDIF
+6 7 59 ;
+7 1 403 END
+7 4 46 .
+
+<signal-program>
+..<program>
+....401 PROGRAM
+....<procedure-identifier>
+......<identifier>
+........1001 PR
+....59 ;
+....<block>
+......<variable-declaration>
+........404 VAR
+........<declarations-list>
+..........<declaration>
+............<variable-identifier>
+..............<identifier>
+................1002 V1
+..........58 :
+..........<attribute>
+............405 INTEGER
+..........59 ;
+..........<declarations-list>
+............<empty>
+......402 BEGIN
+......<statements-list>
+........<statement>
+..........<condition-statement>
+............<incomplete-condition-statement>
+..............408 IF
+..............<conditional-expression>
+................<expretion>
+..................<unsigned-integer>
+....................501 100
+................61 =
+................<expretion>
+..................<variable-identifier>
+....................<identifier>
+......................1003 V2
+..............409 THEN
+..............<statements-list>
+................<empty>
+............<alternative-part>
+..............<empty>
+Parser: Error(line 5, column 2):Found 'ELS' Expected 'ENDIF'

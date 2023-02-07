@@ -1,0 +1,17 @@
+.386
+.MODEL MEDIUM
+.DATA
+	V1	DD	?
+.CODE
+PR PROC
+MOV AX, PR
+CMP AX, V1
+JNE $L0
+NOP
+$L0: NOP
+NOP
+ret
+PR ENDP
+Code Generator : Error(line 4, column 5): Can not compare PR and V1 different types
+
+

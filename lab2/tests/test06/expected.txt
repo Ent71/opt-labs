@@ -1,0 +1,20 @@
+.386
+.MODEL MEDIUM
+.DATA
+	V1	DD	?
+	PR	DD	?
+.CODE
+PR PROC
+MOV AX, 100
+CMP AX, V2
+JNE $L0
+NOP
+$L0: NOP
+NOP
+ret
+PR ENDP
+Code Generator : Error(line 3, column 6): Variable: PR is already defined
+Code Generator : Error(line 5, column 11): Variable: V2 is not defined
+Code Generator : Error(line 5, column 5): Can not compare 100 and V2 different types
+
+

@@ -1,0 +1,10 @@
+.386
+.MODEL MEDIUM
+.DATA
+.CODE
+PR PROC
+NOP
+ret
+PR ENDP
+
+

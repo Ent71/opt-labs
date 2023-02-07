@@ -1,0 +1,24 @@
+.386
+.MODEL MEDIUM
+.DATA
+	V1	DD	?
+	V2	REAL4	?
+.CODE
+PR PROC
+MOV AX, V1
+CMP AX, V2
+JNE $L0
+NOP
+$L0: NOP
+MOV AX, V2
+FCOM AX, 121
+JNE $L0
+NOP
+$L0: NOP
+NOP
+ret
+PR ENDP
+Code Generator : Error(line 5, column 5): Can not compare V1 and V2 different types
+Code Generator : Error(line 7, column 5): Can not compare V2 and 121 different types
+
+

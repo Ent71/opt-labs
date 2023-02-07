@@ -1,0 +1,64 @@
+1 1 401 PROGRAM
+1 9 1001 PR
+1 11 59 ;
+2 2 404 VAR
+2 6 1002 V1
+2 8 58 :
+2 9 405 INTEGER
+2 16 59 ;
+3 13 1003 V2
+3 15 58 :
+3 16 406 FLOAT
+3 21 59 ;
+4 6 1004 V3
+4 8 58 :
+4 9 405 INTEGER
+4 16 59 ;
+5 1 402 BEGIN
+6 1 403 END
+6 4 46 .
+
+<signal-program>
+..<program>
+....401 PROGRAM
+....<procedure-identifier>
+......<identifier>
+........1001 PR
+....59 ;
+....<block>
+......<variable-declaration>
+........404 VAR
+........<declarations-list>
+..........<declaration>
+............<variable-identifier>
+..............<identifier>
+................1002 V1
+..........58 :
+..........<attribute>
+............405 INTEGER
+..........59 ;
+..........<declarations-list>
+............<declaration>
+..............<variable-identifier>
+................<identifier>
+..................1003 V2
+............58 :
+............<attribute>
+..............406 FLOAT
+............59 ;
+............<declarations-list>
+..............<declaration>
+................<variable-identifier>
+..................<identifier>
+....................1004 V3
+..............58 :
+..............<attribute>
+................405 INTEGER
+..............59 ;
+..............<declarations-list>
+................<empty>
+......402 BEGIN
+......<statements-list>
+........<empty>
+......403 END
+....46 .
